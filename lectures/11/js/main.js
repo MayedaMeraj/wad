@@ -1,3 +1,4 @@
+
 //============================================
 //-----------  STEP - 1 ----------------------
 //============================================
@@ -5,9 +6,9 @@
 
 /*var todos = [];
 function add() {
-    var task = document.getElementById("task").value;
-    todos.push(task);
-    document.getElementById('todos').innerText = todos;
+    var task = document.getElementById("task").value; /!*The  function getElementById() returns the element that has the ID attribute with the specified value.*!/
+    todos.push(task); /!*Whatever user inputs in task is pushed to the array todos*!/
+    document.getElementById('todos').innerText = todos; /!*Anything user has given input will be displayed*!/
 }*/
 
 
@@ -25,15 +26,16 @@ function add() {
 }
 
 function show() {
-    var ul = document.createElement('ul');
-    ul.classList.add("list-group");
-    for(var i=0; i<todos.length; i++){
-        var li = document.createElement('li');
+    var ul = document.createElement('ul'); /!*variable ul is created*!/
+    ul.classList.add("list-group"); /!*List group is added to ul*!/
+    for(var i=0; i<todos.length; i++)
+    {
+        var li = document.createElement('li'); /!*variable li is created*!/
         li.innerHTML  = '<li>' + todos[i] + '</li>';
         li.classList.add("list-group-item");
-        ul.appendChild(li);
+        ul.appendChild(li); /!*append li to ul*!/
     }
-    document.getElementById('todos').appendChild(ul);
+    document.getElementById('todos').appendChild(ul); /!*append ul to todos*!/
 }*/
 
 
@@ -42,18 +44,18 @@ function show() {
 //============================================
 
 
-/*
-function getTodos() {
+/*function getTodos() {
     var todos = [];
-    var todos_str = localStorage.getItem('todo');
+    var todos_str = localStorage.getItem('todo'); /!*The getItem() method of the Storage interface,
+    when passed a key name, will return that key's value or null if the key does not exist*!/
     if(todos_str !== null)
-        todos = JSON.parse(todos_str);
+        todos = JSON.parse(todos_str);/!*Parse the data with JSON.parse(), and the data becomes a JavaScript object.*!/
     return todos;
 }
 
 function add() {
     var task = document.getElementById('task').value;
-    if(task.trim() == ''){
+    if(task.trim() == ''){/!*Remove whitespace from both sides of a string*!/
         document.getElementById('message').style.display = 'block';
         return false;
     } else {
@@ -83,8 +85,7 @@ function show() {
     }
     document.getElementById('todos').appendChild(ul);
 }
-show();
-*/
+show();*/
 
 
 
@@ -92,8 +93,9 @@ show();
 //-----------  STEP - 4 ----------------------
 //============================================
 
+/*
 
-/*function getTodos() {
+function getTodos() {
     var todos = [];
     var todos_str = localStorage.getItem('todo');
     if(todos_str !== null)
@@ -120,7 +122,7 @@ function add() {
 function remove() {
     var id = this.getAttribute('id');
     var todos = getTodos();
-    todos.splice(id,1);
+    todos.splice(id,1); /!*The splice() method changes the contents of an array by removing existing elements and/or adding new elements*!/
     localStorage.setItem('todo',JSON.stringify(todos));
     show();
     return false;
@@ -145,7 +147,7 @@ function show() {
     document.getElementById('todos').appendChild(ul);
     var buttons = document.getElementsByClassName('btn-danger');
     for(var i=0; i<buttons.length; i++){
-        buttons[i].addEventListener('click',remove);
+        buttons[i].addEventListener('click',remove);/!*removes data when clicked*!/
     }
 }
 
@@ -162,8 +164,9 @@ function isDone(e) {
     localStorage.setItem('todo',JSON.stringify(todos));
     show();
 }
-show();*/
+show();
 
+*/
 
 
 
