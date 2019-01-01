@@ -4,12 +4,12 @@
 //============================================
 
 
-/*var todos = [];
+var todos = [];
 function add() {
-    var task = document.getElementById("task").value; /!*The  function getElementById() returns the element that has the ID attribute with the specified value.*!/
-    todos.push(task); /!*Whatever user inputs in task is pushed to the array todos*!/
-    document.getElementById('todos').innerText = todos; /!*Anything user has given input will be displayed*!/
-}*/
+    var task = document.getElementById("task").value; /*The  function getElementById() returns the element that has the ID attribute with the specified value.*/
+    todos.push(task); /*Whatever user inputs in task is pushed to the array todos*/
+    document.getElementById('todos').innerText = todos; /*Anything user has given input will be displayed*/
+}
 
 
 //============================================

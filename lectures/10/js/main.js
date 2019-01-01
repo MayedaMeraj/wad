@@ -9,7 +9,7 @@ function  displayName(name) {
 }
 */
 /* Parameter vs Argument */
-/*function  show Message() {
+/*function  showMessage() {
     console.log("A message to the console");
 }*/
 
